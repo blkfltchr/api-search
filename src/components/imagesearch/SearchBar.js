@@ -1,15 +1,11 @@
 import React from 'react'
 
 class SearchBar extends React.Component {
-    constructor() {
-        super();
-        this.state = {value: ''}
-    }
-    
+    state = {value: ''}    
     
     onFormSubmit = (e) => {
         e.preventDefault();
-        this.props.onSubmit(this.state.value);
+        this.props.onImageSearch(this.state.value);
     }
 
     render() {

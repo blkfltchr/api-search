@@ -8,10 +8,10 @@ class ImageSearch extends React.Component {
     state = { images: [] }
 
     componentDidMount() {
-        this.onSearchSubmit('search');
+        this.onImageSearch('search');
     }
     
-    onSearchSubmit = async (value) => {
+    onImageSearch = async (value) => {
         const response = await unsplash.get('/search/photos', {
             params: { query: value },
             
@@ -22,7 +22,7 @@ class ImageSearch extends React.Component {
     render() {
         return (
             <div className="ui container" style={{marginTop:"1rem"}}>
-                <SearchBar onSubmit={this.onSearchSubmit} />
+                <SearchBar onImageSearch={this.onImageSearch} />
                 <ImageResults images={this.state.images} />
             </div>
         );

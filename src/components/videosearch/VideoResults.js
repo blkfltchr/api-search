@@ -6,9 +6,9 @@ const VideoResults = ({videos, onVideoSelect}) => {
     const videosList = videos.map((video) => {
         return (
             <VideoCard 
-                onVideoSelect={onVideoSelect} 
-                video={video} 
                 key={video.id.videoId}
+                video={video} 
+                onVideoSelect={onVideoSelect} 
             />
         );
     })

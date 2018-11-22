@@ -1,14 +1,19 @@
 import React from 'react';
-import './imagesearch.css'
 import ImageCard from './ImageCard'
+import './imagesearch.css'
 
-const ImageResults = props => {
+const ImageResults = ({images}) => {
 
-    const images = props.images.map((image) => {
-        return <ImageCard key={image.id} image={image} />;
+    const imagesList = images.map((image) => {
+        return (
+            <ImageCard 
+                key={image.id} 
+                image={image} 
+            />
+        );
     })
 
-    return <div className="image-list">{images}</div>
+    return <div className="image-list">{imagesList}</div>
     
 };
 
