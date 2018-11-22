@@ -11,7 +11,7 @@ class VideoSearch extends React.Component {
     };
 
     componentDidMount() {
-        this.onVideoSearch('funny videos');
+        this.onVideoSearch('search');
     }
 
     onVideoSearch = async value => {

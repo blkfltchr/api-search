@@ -6,6 +6,10 @@ import ImageResults from './ImageResults'
 
 class ImageSearch extends React.Component {
     state = { images: [] }
+
+    componentDidMount() {
+        this.onSearchSubmit('search');
+    }
     
     onSearchSubmit = async (value) => {
         const response = await unsplash.get('/search/photos', {
@@ -19,7 +23,6 @@ class ImageSearch extends React.Component {
         return (
             <div className="ui container" style={{marginTop:"1rem"}}>
                 <SearchBar onSubmit={this.onSearchSubmit} />
-                <p>Found: {this.state.images.length} images</p>
                 <ImageResults images={this.state.images} />
             </div>
         );
