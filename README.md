@@ -5,11 +5,12 @@ It was originally built following the `Modern React and Redux` tutorial and comb
 
 Features include:
 - [x] Image search
+- [x] Material UI
 - [x] Video search
+- [x] Routing
+- [x] Deployed to Netlify
 
 Features to come:
-- [ ] Routing
-- [ ] Styled components
 - [ ] News search
 
-You will eventually be able to [view the live demo here](http://api-search.netlify.com/).
+You will eventually be able to [view the live demo here](http://api-searcher.netlify.com/).

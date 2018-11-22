@@ -8,6 +8,7 @@ const App = () => {
         <div>
             <div className="ui container">
                 <div className="ui segment">
+                    <Link to="/">Home</Link>    
                     <Link to="/images">Images</Link>
                     <Link to="/videos">Videos</Link>
                 </div>
