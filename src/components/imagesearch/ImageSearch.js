@@ -1,7 +1,7 @@
 import React from 'react';
 import unsplash from '../../api/unsplash';
 
-import SearchBar from './SearchBar'
+// import ImageSearchBar from './ImageSearchBar'
 import ImageResults from './ImageResults'
 
 class ImageSearch extends React.Component {
@@ -22,7 +22,7 @@ class ImageSearch extends React.Component {
     render() {
         return (
             <div className="ui container" style={{marginTop:"1rem"}}>
-                <SearchBar onImageSearch={this.onImageSearch} />
+                {/* <ImageSearchBar onImageSearch={this.onImageSearch} /> */}
                 <ImageResults images={this.state.images} />
             </div>
         );

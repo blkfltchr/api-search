@@ -1,11 +1,11 @@
 import React from 'react'
 
-class SearchBar extends React.Component {
-    state = {value: ''}    
+class VideoSearchBar extends React.Component {
+    state = {value: ''}
     
-    onFormSubmit = (e) => {
+    onFormSubmit = e => {
         e.preventDefault();
-        this.props.onImageSearch(this.state.value);
+        this.props.onVideoSearch(this.state.value);
     }
 
     render() {
@@ -15,7 +15,7 @@ class SearchBar extends React.Component {
                     <div className="ui icon input" style={{width: "100%"}}>
                         <input style={{borderRadius:"15px"}} 
                             type="text" 
-                            placeholder="Search images..." 
+                            placeholder="Search videos..." 
                             value={this.state.value}
                             onChange={e => this.setState({value: e.target.value})}
                         />
@@ -27,4 +27,4 @@ class SearchBar extends React.Component {
     }
 };
  
-export default SearchBar;
+export default VideoSearchBar;

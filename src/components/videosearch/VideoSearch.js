@@ -1,6 +1,6 @@
 import React from 'react';
 import youtube from '../../api/youtube'
-import SearchBar from './SearchBar'
+// import VideoSearchBar from './VideoSearchBar'
 import VideoResults from './VideoResults'
 import VideoDetail from './VideoDetail';
 
@@ -34,7 +34,7 @@ class VideoSearch extends React.Component {
     render() { 
         return ( 
             <div className="ui container" style={{marginTop:"1rem"}}>
-                <SearchBar onVideoSearch={this.onVideoSearch}/>
+                {/* <VideoSearchBar onVideoSearch={this.onVideoSearch}/> */}
                 <div className="ui grid">
                     <div className="ui row">
                         <div className="eleven wide column">
