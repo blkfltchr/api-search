@@ -1,8 +1,9 @@
 import React from 'react';
-import {Route, Link} from 'react-router-dom'
+import {Route, NavLink} from 'react-router-dom'
 import ImageSearch from './imagesearch/ImageSearch'
 import VideoSearch from './videosearch/VideoSearch'
 import SearchBar from './SearchBar'
+import './app.css'
 
 class App extends React.Component {
     state = {
@@ -12,11 +13,11 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <div className="ui container">
-                    <div className="ui segment">
-                        <Link onClick={e => this.setState({searchType: 'all'})} to="/">Home</Link>    
-                        <Link onClick={e => this.setState({searchType: 'image'})} to="/images">Images</Link>
-                        <Link onClick={e => this.setState({searchType: 'video'})} to="/videos">Videos</Link>
+                <div className="ui">
+                    <div className="ui nav-wrapper">
+                        <NavLink exact onClick={e => this.setState({searchType: 'all'})} activeStyle={{ textDecoration: 'underline' }} to="/" className="nav-element">Home</NavLink>    
+                        <NavLink onClick={e => this.setState({searchType: 'image'})} activeStyle={{ textDecoration: 'underline' }} to="/images" className="nav-element">Images</NavLink>
+                        <NavLink onClick={e => this.setState({searchType: 'video'})} activeStyle={{ textDecoration: 'underline' }} to="/videos" className="nav-element">Videos</NavLink>
                     </div>
                         <SearchBar searchType={this.state.searchType}/>
                 </div>

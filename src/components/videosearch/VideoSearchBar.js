@@ -1,6 +1,6 @@
 import React from 'react'
 
-class VideoSearchBar extends React.Component {
+class SearchBar extends React.Component {
     state = {value: ''}
     
     onFormSubmit = e => {
@@ -27,4 +27,4 @@ class VideoSearchBar extends React.Component {
     }
 };
  
-export default VideoSearchBar;
+export default SearchBar;
