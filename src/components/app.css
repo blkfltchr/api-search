@@ -1,9 +1,7 @@
 .nav-wrapper {
     display: flex; 
     justify-content: center; 
-    padding: 1rem; 
-    background-color: #F6F9FC;
-
+    padding: 1rem;
 }
 
 .nav-element {
