@@ -8,7 +8,7 @@ class SearchBar extends React.Component {
     render() {
         if (this.props.searchType === 'all') {
             return (
-                <div className="ui segment">
+                <div className="ui container" style={{paddingTop: "1rem"}}>
                     <form className="ui form">
                         <div className="ui icon input" style={{width: "100%"}}>
                             <input style={{borderRadius:"15px"}} 

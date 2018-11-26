@@ -10,7 +10,7 @@ class ImageSearchBar extends React.Component {
 
     render() {
         return (
-            <div className="ui segment">
+            <div className="ui container" style={{paddingTop: "1rem"}}>
                 <form onSubmit={this.onFormSubmit} className="ui form">
                     <div className="ui icon input" style={{width: "100%"}}>
                         <input style={{borderRadius:"15px"}} 
