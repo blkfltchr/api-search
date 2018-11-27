@@ -1,7 +1,7 @@
 import React from 'react';
 import unsplash from '../../api/unsplash';
-
-// import ImageSearchBar from './ImageSearchBar'
+import {NavLink} from 'react-router-dom'
+import ImageSearchBar from './ImageSearchBar'
 import ImageResults from './ImageResults'
 
 class ImageSearch extends React.Component {
@@ -21,8 +21,17 @@ class ImageSearch extends React.Component {
 
     render() {
         return (
-            <div className="ui container" style={{marginTop:"1rem"}}>
-                {/* <ImageSearchBar onImageSearch={this.onImageSearch} /> */}
+            <div className="ui">
+                <div className="ui">
+                    <div style={{backgroundColor: "#F6F9FC", borderBottom: "solid 1px lightgrey", marginBottom:"1rem",}}>
+                        <ImageSearchBar onImageSearch={this.onImageSearch} />
+                        <div className="ui nav-wrapper">
+                            <NavLink exact onClick={e => this.setState({searchType: 'all'})} activeStyle={{ textDecoration: 'underline' }} to="/" className="nav-element">Home</NavLink>    
+                            <NavLink onClick={e => this.setState({searchType: 'image'})} activeStyle={{ textDecoration: 'underline' }} to="/images" className="nav-element">Images</NavLink>
+                            <NavLink onClick={e => this.setState({searchType: 'video'})} activeStyle={{ textDecoration: 'underline' }} to="/videos" className="nav-element">Videos</NavLink>
+                        </div>
+                    </div>
+                </div>
                 <ImageResults images={this.state.images} />
             </div>
         );
