@@ -19,3 +19,18 @@
 a.nav-element:active {
     text-decoration: underline
 }
+
+/* Searchbar styles */ 
+
+.searchbar-wrapper {
+    margin-bottom: 1rem
+}
+
+.searchbar-background{
+    background-color: #F6F9FC; 
+    border-bottom: solid 1px lightgrey
+}
+
+.searchbar-icon {
+    border-radius: 15px
+}
