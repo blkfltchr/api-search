@@ -1,4 +1,5 @@
 import React from 'react';
+import './videosearch.css'
 import youtube from '../../api/youtube'
 import {NavLink} from 'react-router-dom'
 import VideoSearchBar from './VideoSearchBar'

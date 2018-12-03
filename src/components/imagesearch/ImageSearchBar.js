@@ -1,4 +1,5 @@
 import React from 'react'
+import './imagesearch.css'
 
 class ImageSearchBar extends React.Component {
     state = {value: ''}    
@@ -10,10 +11,11 @@ class ImageSearchBar extends React.Component {
 
     render() {
         return (
-            <div className="ui container" style={{paddingTop: "1rem"}}>
+            <div className="ui container image-searchbar">
                 <form onSubmit={this.onFormSubmit} className="ui form">
-                    <div className="ui icon input" style={{width: "100%"}}>
-                        <input style={{borderRadius:"15px"}} 
+                    <div className="ui icon input image-searchbar-input">
+                        <input 
+                            style={{borderRadius:"15px"}} 
                             type="text" 
                             placeholder="Search images..." 
                             value={this.state.value}

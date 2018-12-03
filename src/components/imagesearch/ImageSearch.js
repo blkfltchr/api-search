@@ -1,4 +1,5 @@
 import React from 'react';
+import './imagesearch.css'
 import unsplash from '../../api/unsplash';
 import {NavLink} from 'react-router-dom'
 import ImageSearchBar from './ImageSearchBar'
@@ -23,7 +24,7 @@ class ImageSearch extends React.Component {
         return (
             <div className="ui">
                 <div className="ui">
-                    <div style={{backgroundColor: "#F6F9FC", borderBottom: "solid 1px lightgrey", marginBottom:"1rem",}}>
+                    <div className="image-searchbar-wrapper">
                         <ImageSearchBar onImageSearch={this.onImageSearch} />
                         <div className="ui nav-wrapper">
                             <NavLink exact onClick={e => this.setState({searchType: 'all'})} activeStyle={{ textDecoration: 'underline' }} to="/" className="nav-element">Home</NavLink>    

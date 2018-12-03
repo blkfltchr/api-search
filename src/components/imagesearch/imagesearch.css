@@ -10,3 +10,21 @@
 .image-list img {
     width: 250px;
 }
+
+/* Image search styles */
+
+.image-searchbar-wrapper {
+    background-color: #F6F9FC; 
+    border-bottom: solid 1px lightgrey; 
+    margin-bottom: 1rem
+}
+
+/* Image searchbar styles */
+
+.image-searchbar-input {
+    width: 100%
+}
+
+.image-searchbar {
+    padding-top: 1rem
+}
