@@ -9,3 +9,30 @@
 .video-item.item img {
     max-width: 180px;
 }
+
+/* Video detail styles */
+
+.video-detail-loader {
+    height: 475px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+/* Video search styles */
+
+.video-searchbar-wrapper {
+    background-color: #F6F9FC; 
+    border-bottom: solid 1px lightgrey; 
+    margin-bottom: 1rem
+}
+
+/* Video searchbar styles */
+
+.video-searchbar-input {
+    width: 100%
+}
+
+.video-searchbar {
+    padding-top: 1rem
+}

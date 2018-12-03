@@ -35,9 +35,9 @@ class VideoSearch extends React.Component {
     render() { 
         return ( 
             <div className="ui">
-            <div className="ui">
-                    <div style={{backgroundColor: "#F6F9FC", borderBottom: "solid 1px lightgrey", marginBottom:"1rem"}}>
-                    <VideoSearchBar onVideoSearch={this.onVideoSearch}/>
+                <div className="ui">
+                    <div className="video-searchbar-wrapper">
+                        <VideoSearchBar onVideoSearch={this.onVideoSearch}/>
                         <div className="ui nav-wrapper">
                             <NavLink exact onClick={e => this.setState({searchType: 'all'})} activeStyle={{ textDecoration: 'underline' }} to="/" className="nav-element">Home</NavLink>    
                             <NavLink onClick={e => this.setState({searchType: 'image'})} activeStyle={{ textDecoration: 'underline' }} to="/images" className="nav-element">Images</NavLink>
@@ -46,22 +46,22 @@ class VideoSearch extends React.Component {
                     </div>
                 </div>
                 <div className="ui container">
-                <div className="ui grid">
-                    <div className="ui row">
-                        <div className="eleven wide column">
-                            <VideoDetail video={this.state.selectedVideo}/>
-                        </div>
-                        <div className="five wide column">
-                            <VideoResults 
-                                videos={this.state.videos} 
-                                onVideoSelect={this.onVideoSelect}
-                            />
+                    <div className="ui grid">
+                        <div className="ui row">
+                            <div className="eleven wide column">
+                                <VideoDetail video={this.state.selectedVideo}/>
+                            </div>
+                            <div className="five wide column">
+                                <VideoResults 
+                                    videos={this.state.videos} 
+                                    onVideoSelect={this.onVideoSelect}
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
-                </div>
             </div>
-         );
+        );
     }
 }
  

@@ -4,8 +4,8 @@ const VideoDetail = ({ video }) => {
     if (!video) {
         return (
             <div>
-                <div class="ui active inverted dimmer" style={{height: "475px", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                    <div class="ui medium text loader"><h3>Loading...</h3></div>
+                <div className="ui active inverted dimmer video-detail-loader">
+                    <div className="ui medium text loader"><h3>Loading...</h3></div>
                 </div>
             </div>
         )

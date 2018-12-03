@@ -9,7 +9,8 @@ class SearchBar extends React.Component {
                     <div className="ui container" style={{paddingTop: "1rem"}}>
                         <form className="ui form">
                             <div className="ui icon input" style={{width: "100%"}}>
-                                <input className="searchbar-icon" 
+                                <input 
+                                    style={{borderRadius: "15px"}}
                                     type="text" 
                                     placeholder="Search..." 
                                 />
