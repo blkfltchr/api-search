@@ -12,6 +12,7 @@ const VideoDetail = ({ video }) => {
     } 
 
     const videoSource = `https://www.youtube.com/embed/${video.id.videoId}`
+    const externalLink = `https://www.youtube.com/watch?v=${video.id.videoId}`
 
         return (
             <div>
@@ -21,10 +22,12 @@ const VideoDetail = ({ video }) => {
                         title="Video player" allowFullScreen
                     />
                 </div>
-                <div className="ui segment">
-                    <h4 className="ui header">{video.snippet.title}</h4>
-                    <p>{video.snippet.description}</p>
-                </div>
+                <a target="_blank" href={externalLink} rel="noopener noreferrer">
+                    <div className="ui segment">
+                        <h4 className="ui header">{video.snippet.title}</h4>
+                        <p style={{color: "black"}}>{video.snippet.description}</p>
+                    </div>
+                </a>
             </div>
         );
 };
