@@ -1,11 +1,12 @@
 import React from 'react';
+import './videosearch.css'
 
 const VideoDetail = ({ video }) => {
     if (!video) {
         return (
             <div>
-                <div className="ui active inverted dimmer video-detail-loader">
-                    <div className="ui medium text loader"><h3>Loading...</h3></div>
+                <div className="ui active inverted dimmer video-detail-loader" style={{paddingTop: "10rem"}}>
+                    <div className="ui text loader"><h3>Loading...</h3></div>
                 </div>
             </div>
         )

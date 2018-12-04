@@ -16,7 +16,8 @@
     height: 475px;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    padding-top: 4rem
 }
 
 /* Video search styles */
@@ -24,7 +25,7 @@
 .video-searchbar-wrapper {
     background-color: #F6F9FC; 
     border-bottom: solid 1px lightgrey; 
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
 }
 
 /* Video searchbar styles */
